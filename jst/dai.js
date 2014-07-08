@@ -3,7 +3,7 @@ var dai, onYouTubeIframeAPIReady;
 dai = {
   videoId: 'WD627y_AvFs',
   width: 900,
-  height: 550,
+  height: 540,
   player: false,
   ticker: false,
   outer: false,
