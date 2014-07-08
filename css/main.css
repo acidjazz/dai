@@ -4,14 +4,134 @@ stylus -w main.styl -o ../css/.
 body {
   background-color: #808080;
   font-size: 14px;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
 }
 .playerOuter {
-  background-color: #000;
-  padding: 2em 0;
+  margin: 5em 0;
+  padding: 5em 0;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
 }
 #player {
   display: block;
   width: 900px;
   height: 550px;
   margin: auto;
+}
+.black {
+  background-color: #000;
+}
+.red {
+  background-color: #f00;
+}
+.blue {
+  background-color: #9be7ff;
+}
+.white {
+  background-color: #fff;
+}
+.grey {
+  background-color: #808080;
+}
+.yellow {
+  background-color: #ff0;
+}
+.straw {
+  background-color: #755a4b;
+}
+.turq {
+  background-color: #2f6262;
+}
+.mist {
+  background-color: #849d78;
+}
+.green {
+  background-color: #98f395;
+}
+.greenblack {
+  -webkit-animation: gradback 0.5s ease-in-out infinite;
+  -moz-animation: gradback 0.5s ease-in-out infinite;
+  -o-animation: gradback 0.5s ease-in-out infinite;
+  -ms-animation: gradback 0.5s ease-in-out infinite;
+  animation: gradback 0.5s ease-in-out infinite;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+@-moz-keyframes gradback {
+  0% {
+    background-color: #98f395;
+  }
+  25% {
+    background-color: #000;
+  }
+  50% {
+    background-color: #98f395;
+  }
+  75% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #98f395;
+  }
+}
+@-webkit-keyframes gradback {
+  0% {
+    background-color: #98f395;
+  }
+  25% {
+    background-color: #000;
+  }
+  50% {
+    background-color: #98f395;
+  }
+  75% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #98f395;
+  }
+}
+@-o-keyframes gradback {
+  0% {
+    background-color: #98f395;
+  }
+  25% {
+    background-color: #000;
+  }
+  50% {
+    background-color: #98f395;
+  }
+  75% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #98f395;
+  }
+}
+@keyframes gradback {
+  0% {
+    background-color: #98f395;
+  }
+  25% {
+    background-color: #000;
+  }
+  50% {
+    background-color: #98f395;
+  }
+  75% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #98f395;
+  }
 }

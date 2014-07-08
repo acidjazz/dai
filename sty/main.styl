@@ -10,14 +10,17 @@ vendor-prefixes ?= webkit moz o ms official
 .clear
   clearfix()
 
-
 body
   background-color grey
   font-size 14px
+  padding 0
+  margin 0
+  transition background-color 0.2s linear
 
 .playerOuter
-  background-color black
-  padding 2em 0
+  margin 5em 0
+  padding 5em 0
+  animation none
 
 #player
   display block
@@ -25,4 +28,38 @@ body
   height 550px
   margin auto
 
+.black
+  background-color black
+.red
+  background-color red
+.blue
+  background-color #9be7ff
+.white
+  background-color white
+.grey
+  background-color grey
+.yellow
+  background-color yellow
+.straw
+  background-color #755a4b
+.turq
+  background-color #2f6262
+.mist
+  background-color #849d78
+.green
+  background-color #98f395
+.greenblack
+  animation gradback 0.5s ease-in-out infinite
+  opacity 0.5
 
+@keyframes gradback
+  0%
+    background-color #98f395
+  25%
+    background-color black
+  50%
+    background-color #98f395
+  75%
+    background-color black
+  100%
+    background-color #98f395
