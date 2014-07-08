@@ -1,0 +1,13 @@
+{
+  "cfg": {
+
+    "meta": {
+      "title": "youtube prototype",
+      "description": "demonstrate some youtube v3 api activity",
+      "keywords": "youtube, prototype, v3",
+      "image": "./img/share.png"
+    }
+
+  }
+
+}

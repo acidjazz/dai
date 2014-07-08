@@ -1,0 +1,28 @@
+/*
+stylus -w main.styl -o ../css/.  
+*/
+
+vendor-prefixes ?= webkit moz o ms official
+@import vendor
+
+@import _vars
+
+.clear
+  clearfix()
+
+
+body
+  background-color grey
+  font-size 14px
+
+.playerOuter
+  background-color black
+  padding 2em 0
+
+#player
+  display block
+  width 900px
+  height 550px
+  margin auto
+
+

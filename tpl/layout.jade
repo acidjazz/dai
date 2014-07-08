@@ -1,0 +1,56 @@
+doctype
+
+html(lang='en')
+
+  head
+    title !{cfg.meta.title}
+
+    // google
+    meta(name='title' content=cfg.meta.title)
+    meta(name='description' content=cfg.meta.desc)
+    meta(name='keywords' content=cfg.meta.keywords)
+
+    // facebook
+    meta(property='og:title' content=cfg.meta.title)
+    meta(property='og:type' content='website')
+    meta(property='og:image' content=cfg.meta.image)
+    meta(property='og:description' content=cfg.meta.desc)
+
+    // twitter
+    meta(name='twitter:card' content='summary')
+    meta(name='twitter:title' content=cfg.meta.title)
+    meta(name='twitter:description' content=cfg.meta.desc)
+    meta(name='twitter:image' content=cfg.meta.image)
+
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(http-equiv="X-UA-Compatible",content="IE=Edge")
+
+    meta(name='format-detection', content='telephone=no')
+    meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height')
+
+    link(rel='stylesheet',href='./css/main.css',type='text/css',media='all')
+
+    script(type='text/javascript', src='./jst/loader.js')
+
+  body
+    .container
+      block content
+    #fb-root
+
+  script(type='text/javascript').
+
+    loader.scripts = {
+      "./jst/": ["main","dai"],
+      "./jst/lib/": ["jquery.min"]
+    };
+
+    loader.i( function(result) {
+
+      if (result) {
+
+        dai.i();
+
+      }
+
+    });
+
